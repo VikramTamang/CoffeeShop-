@@ -6,26 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doughy Delights</title>
-
-    <!-- Swiper link -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!-- CDN icon link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Custom CSS file -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
-    <!-- Header section start here -->
+    <!-- Header section -->
     <header class="header">
         <div class="logoContent">
-            <a href="#" class="logo"><img src="images/logo.png" alt="Doughy Delights Logo"></a>
+            <a href="#home" class="logo"><img src="images/logo.png" alt="Doughy Delights Logo" loading="lazy"></a>
             <h1 class="logoName">Doughy Delights</h1>
         </div>
-
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#product">Products</a>
@@ -33,19 +25,16 @@
             <a href="#review">Reviews</a>
             <a href="#contact">Contact</a>
         </nav>
-
         <div class="icon">
             <i class="fas fa-search" id="search"></i>
             <i class="fas fa-bars" id="menu-bar"></i>
         </div>
-
         <div class="search">
-            <input type="search" placeholder="Search...">
+            <input type="search" placeholder="Search..." aria-label="Search products">
         </div>
     </header>
-    <!-- Header section end here -->
 
-    <!-- Home section start here -->
+    <!-- Home section -->
     <section class="home" id="home">
         <div class="homeContent">
             <h2>Delicious Cake for Everyone</h2>
@@ -53,175 +42,155 @@
                 tastes. It promises a diverse selection, ensuring every customer finds something delightful to enjoy,
                 making every moment sweeter.</p>
             <div class="home-btn">
-                <a href="#"><button>See More</button></a>
+                <a href="#product"><button>Shop Now</button></a>
             </div>
         </div>
     </section>
-    <!-- Home section end here -->
 
-    <!-- Product section start here -->
-    <section class="product" id="product">
-        <div class="heading">
-            <h2>Our Exclusive Products</h2>
-        </div>
-        <div class="swiper product-row">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="images/cake1.png" alt="Chocolate Cake">
-                    </div>
-                    <div class="product-content">
-                        <h3>Chocolate Cake</h3>
-                        <p>A rich and decadent chocolate cake that’s perfect for any celebration.</p>
-                        <div class="orderNow">
-                            <button>Order Now</button>
-                        </div>
-                    </div>
+    <!-- Product section -->
+<section class="product" id="product">
+    <div class="heading">
+        <h2>Our Exclusive Products</h2>
+    </div>
+    <div class="swiper product-row">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/cake1.png" alt="Chocolate Cake" loading="lazy" width="180" height="180">
                 </div>
-
-                <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="images/image2.png" alt="Vanilla Cake">
-                    </div>
-                    <div class="product-content">
-                        <h3>Vanilla Cake</h3>
-                        <p>Vanilla cake uses vanilla as the primary flavoring agent. It can be enjoyed in various forms,
-                            including layer cakes, sheet cakes, cupcakes, and as a base for other desserts such as
-                            trifles or cake pops.</p>
-                        <div class="orderNow">
-                            <button>Order Now</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="images/image3.jpg" alt="Red Velvet Cake">
-                    </div>
-                    <div class="product-content">
-                        <h3>Red Velvet Cake</h3>
-                        <p>Red velvet cake is known for its vibrant red color and rich flavor. It features a hint of
-                            cocoa flavor, balanced with a slight tanginess from buttermilk or vinegar, and comes topped
-                            with cream cheese frosting.</p>
-                        <div class="orderNow">
-                            <button>Order Now</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="images/image4.jpg" alt="Strawberry Shortcake">
-                    </div>
-                    <div class="product-content">
-                        <h3>Strawberry Shortcake</h3>
-                        <p>A light and fluffy dessert with layers of strawberries and whipped cream.</p>
-                        <div class="orderNow">
-                            <button>Order Now</button>
-                        </div>
+                <div class="product-content">
+                    <h3>Chocolate Cake</h3>
+                    <p>A rich and decadent chocolate cake perfect for celebrations.</p>
+                    <div class="orderNow">
+                        <button aria-label="Order Chocolate Cake">Order Now</button>
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <div class="swiper product-row">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="images/image5.jpg" alt="Lemon Tart">
-                    </div>
-                    <div class="product-content">
-                        <h3>Lemon Tart</h3>
-                        <p>A zesty and sweet tart made with fresh lemons and a buttery crust.</p>
-                        <div class="orderNow">
-                            <button>Order Now</button>
-                        </div>
-                    </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/image2.png" alt="Vanilla Cake" loading="lazy" width="180" height="180">
                 </div>
-
-                <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="images/image6.jpg" alt="Carrot Cake">
-                    </div>
-                    <div class="product-content">
-                        <h3>Carrot Cake</h3>
-                        <p>Moist and flavorful carrot cake topped with creamy frosting.</p>
-                        <div class="orderNow">
-                            <button>Order Now</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="images/image7.jpg" alt="Blueberry Muffin">
-                    </div>
-                    <div class="product-content">
-                        <h3>Blueberry Muffin</h3>
-                        <p>A delightful muffin bursting with fresh blueberries and a hint of vanilla.</p>
-                        <div class="orderNow">
-                            <button>Order Now</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="images/image8.jpg" alt="Cheesecake">
-                    </div>
-                    <div class="product-content">
-                        <h3>Cheesecake</h3>
-                        <p>A creamy and smooth cheesecake topped with a fruit glaze.</p>
-                        <div class="orderNow">
-                            <button>Order Now</button>
-                        </div>
+                <div class="product-content">
+                    <h3>Vanilla Cake</h3>
+                    <p>A versatile vanilla cake enjoyed in various forms.</p>
+                    <div class="orderNow">
+                        <button aria-label="Order Vanilla Cake">Order Now</button>
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/image3.jpg" alt="Red Velvet Cake" loading="lazy" width="180" height="180">
+                </div>
+                <div class="product-content">
+                    <h3>Red Velvet Cake</h3>
+                    <p>Vibrant red cake with cocoa and cream cheese frosting.</p>
+                    <div class="orderNow">
+                        <button aria-label="Order Red Velvet Cake">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/image4.jpg" alt="Strawberry Shortcake" loading="lazy" width="180" height="180">
+                </div>
+                <div class="product-content">
+                    <h3>Strawberry Shortcake</h3>
+                    <p>Light dessert with strawberries and whipped cream.</p>
+                    <div class="orderNow">
+                        <button aria-label="Order Strawberry Shortcake">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/image5.jpg" alt="Lemon Tart" loading="lazy" width="180" height="180">
+                </div>
+                <div class="product-content">
+                    <h3>Lemon Tart</h3>
+                    <p>Zesty tart with a buttery crust.</p>
+                    <div class="orderNow">
+                        <button aria-label="Order Lemon Tart">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/image6.jpg" alt="Carrot Cake" loading="lazy" width="180" height="180">
+                </div>
+                <div class="product-content">
+                    <h3>Carrot Cake</h3>
+                    <p>Moist cake with creamy frosting.</p>
+                    <div class="orderNow">
+                        <button aria-label="Order Carrot Cake">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/image7.jpg" alt="Blueberry Muffin" loading="lazy" width="180" height="180">
+                </div>
+                <div class="product-content">
+                    <h3>Blueberry Muffin</h3>
+                    <p>Muffin with fresh blueberries and vanilla.</p>
+                    <div class="orderNow">
+                        <button aria-label="Order Blueberry Muffin">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/image8.jpg" alt="Cheesecake" loading="lazy" width="180" height="180">
+                </div>
+                <div class="product-content">
+                    <h3>Cheesecake</h3>
+                    <p>Creamy cheesecake with fruit glaze.</p>
+                    <div class="orderNow">
+                        <button aria-label="Order Cheesecake">Order Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <!-- Product section end here -->
+        <div class="swiper-button-next" aria-label="Next product"></div>
+        <div class="swiper-button-prev" aria-label="Previous product"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
 
-    <!-- Blogs section start here -->
+    <!-- Blogs section -->
     <section class="blogs" id="blogs">
         <div class="swiper blogs-row">
             <div class="swiper-wrapper">
                 <div class="swiper-slide box">
                     <div class="img">
-                        <img src="images/blog-img1.png" alt="Cupcakes">
+                        <img src="images/blog-img1.png" alt="Cupcakes" loading="lazy">
                     </div>
                     <div class="content">
                         <h3>Caramel Bourbon Vanilla Cupcakes</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
-                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
-                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum corporis
+                            accusamus aperiam fugiat.</p>
                         <a href="#blogs" class="btn">Learn More</a>
                     </div>
                 </div>
-
                 <div class="swiper-slide box">
                     <div class="img">
-                        <img src="images/blog-img2.png" alt="Baking Tips">
+                        <img src="images/blog-img2.png" alt="Baking Tips" loading="lazy">
                     </div>
                     <div class="content">
                         <h3>Baking Tips for Beginners</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
-                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
-                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum corporis
+                            accusamus aperiam fugiat.</p>
                         <a href="#blogs" class="btn">Learn More</a>
                     </div>
                 </div>
-
                 <div class="swiper-slide box">
                     <div class="img">
-                        <img src="images/blog-img3.png" alt="Cake Decorating">
+                        <img src="images/blog-img3.png" alt="Cake Decorating" loading="lazy">
                     </div>
                     <div class="content">
                         <h3>Cake Decorating Basics</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
-                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
-                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum corporis
+                            accusamus aperiam fugiat.</p>
                         <a href="#blogs" class="btn">Learn More</a>
                     </div>
                 </div>
@@ -231,35 +200,30 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    <!-- Blogs section end here -->
 
-        <!-- newsletter section start here  -->
-        
-        <section class="newsletter">
-            <form action="">
-                <h3>subscribe for latest update</h3>
-                <input type="email" name="" placeholder="enter your email" id="" class="box">
-                <input type="button" value="subscribe" class="box2">
-            </form>
-        </section>
-        <!-- newsletter section ends here  -->
-        
-<!-- review section start here  -->
+    <!-- Newsletter section -->
+    <section class="newsletter">
+        <form action="/subscribe" method="POST">
+            <h3>Subscribe for Latest Updates</h3>
+            <input type="email" name="email" placeholder="Enter your email" class="box" required>
+            <input type="submit" value="Subscribe" class="box2">
+        </form>
+    </section>
+
+    <!-- Review section -->
 <section class="review" id="review">
     <div class="heading">
         <h2>Client Reviews</h2>
     </div>
-
     <div class="swiper review-row">
         <div class="swiper-wrapper">
             <div class="swiper-slide box">
                 <div class="client-review">
-                    <p>"Doughy Delights made my birthday unforgettable! The chocolate cake was a hit, and everyone loved
-                        it!"</p>
+                    <p>"Doughy Delights made my birthday unforgettable! The chocolate cake was a hit!"</p>
                 </div>
                 <div class="client-info">
                     <div class="img">
-                        <img src="images/client3.jpeg" alt="Client 1">
+                        <img src="images/client3.jpeg" alt="Emily Johnson" loading="lazy" width="50" height="50">
                     </div>
                     <div class="clientDetailed">
                         <h3>Emily Johnson</h3>
@@ -269,11 +233,11 @@
             </div>
             <div class="swiper-slide box">
                 <div class="client-review">
-                    <p>"The vanilla cake was incredibly moist and flavorful. I can't wait to order again!"</p>
+                    <p>"The vanilla cake was incredibly moist and flavorful. Can't wait to order again!"</p>
                 </div>
                 <div class="client-info">
                     <div class="img">
-                        <img src="images/client2.jpg" alt="Client 2">
+                        <img src="images/client2.jpg" alt="Michael Smith" loading="lazy" width="50" height="50">
                     </div>
                     <div class="clientDetailed">
                         <h3>Michael Smith</h3>
@@ -287,7 +251,7 @@
                 </div>
                 <div class="client-info">
                     <div class="img">
-                        <img src="images/client4.jpeg" alt="Client 3">
+                        <img src="images/client4.jpeg" alt="Sophia Lee" loading="lazy" width="50" height="50">
                     </div>
                     <div class="clientDetailed">
                         <h3>Sophia Lee</h3>
@@ -301,7 +265,7 @@
                 </div>
                 <div class="client-info">
                     <div class="img">
-                        <img src="images/client1.jpg" alt="Client 4">
+                        <img src="images/client1.jpg" alt="Daniel Brown" loading="lazy" width="50" height="50">
                     </div>
                     <div class="clientDetailed">
                         <h3>Daniel Brown</h3>
@@ -310,70 +274,59 @@
                 </div>
             </div>
         </div>
+        <div class="swiper-button-next" aria-label="Next review"></div>
+        <div class="swiper-button-prev" aria-label="Previous review"></div>
         <div class="swiper-pagination"></div>
     </div>
 </section>
-<!-- review section ends here  -->
-        
-        <!-- footer section start here  -->
-        
-        <footer class="footer" id="contact">
-            <div class="box-container">
-                <div class="mainBox">
-                    <div class="content">
-                        <a href="#"><img src="images/logo.png" alt=""></a>
-                        <h1 class="logoName"> Doughy Delights </h1>
-                    </div>
-        
-                    <p>Eating cake is savoring happiness; each bite is a celebration that sweetens the soul and brightens the day.</p>
-        
+
+    <!-- Footer section -->
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#home"><img src="images/logo.png" alt="Doughy Delights Logo" loading="lazy"></a>
+                    <h1 class="logoName">Doughy Delights</h1>
                 </div>
-                <div class="box">
-                    <h3>Quick link</h3>
-                    <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i>blogs</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i>review</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
-        
-                </div>
-                <div class="box">
-                    <h3>Extra link</h3>
-                    <a href="#"> <i class="fas fa-arrow-right"></i>Account info</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i>order item</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i>payment method</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i>our services</a>
-                </div>
-                <div class="box">
-                    <h3>Contact Info</h3>
-                    <a href="#"> <i class="fas fa-phone"></i>+91 12222 34444</a>
-                    <a href="#"> <i class="fas fa-envelope"></i>subastv.04@gmail.com</a>
-        
-                </div>
-        
+                <p>Eating cake is savoring happiness; each bite is a celebration that sweetens the soul and brightens
+                    the day.</p>
             </div>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-                <a href="#" class="fab fa-pinterest"></a>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#product"><i class="fas fa-arrow-right"></i>Products</a>
+                <a href="#blogs"><i class="fas fa-arrow-right"></i>Blogs</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i>Reviews</a>
+                <a href="#contact"><i class="fas fa-arrow-right"></i>Contact</a>
             </div>
-            <div class="credit">
-                created by <span>Vikram Ji </span> |all rights reserved !
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="/account"><i class="fas fa-arrow-right"></i>Account Info</a>
+                <a href="/orders"><i class="fas fa-arrow-right"></i>Order Items</a>
+                <a href="/privacy"><i class="fas fa-arrow-right"></i>Privacy Policy</a>
+                <a href="/payment"><i class="fas fa-arrow-right"></i>Payment Methods</a>
+                <a href="/services"><i class="fas fa-arrow-right"></i>Our Services</a>
             </div>
-        </footer>
-        
-    
-        
-        <!-- swiper js link  -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        
-        <!-- custom js file  -->
-        <script src="index.js"></script>
-        
-        
-        </body>
-        
-        </html>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="tel:+911222234444"><i class="fas fa-phone"></i>+91 12222 34444</a>
+                <a href="mailto:subastv.04@gmail.com"><i class="fas fa-envelope"></i>subastv.04@gmail.com</a>
+            </div>
+        </div>
+        <div class="share">
+            <a href="https://facebook.com" class="fab fa-facebook-f" target="_blank"></a>
+            <a href="https://twitter.com" class="fab fa-twitter" target="_blank"></a>
+            <a href="https://instagram.com" class="fab fa-instagram" target="_blank"></a>
+            <a href="https://linkedin.com" class="fab fa-linkedin" target="_blank"></a>
+            <a href="https://pinterest.com" class="fab fa-pinterest" target="_blank"></a>
+        </div>
+        <div class="credit">
+            Created by <span>Vikram Ji</span> | All Rights Reserved!
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
